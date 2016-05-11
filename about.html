@@ -12,6 +12,88 @@
 <link rel="stylesheet" type="text/css" href="css/main.css"></head>
 <body>
 
+<div class="columns small-12 medium-12 large-3">  
+    <header>
+    <!-- Small, Medium & Large Display Navigation -->
+        <nav class="menu-container group" id="menu">
+    <!-- Identity Element only on Medium & Large display. "Rotates" from large to medium. -->
+            <div class="pane">
+                <div class="identity-element">
+                	<picture>
+                    	<source srcset="square-placeholder-small.jpg" media="(max-width: 400px)"></source>
+                        <source srcset="square-placeholder-medium.jpg" media="(max-width: 960px)"></source>
+                        <source srcset="square-placeholder-large.jpg"></source>
+    <!-- This image is for browsers that DO NOT support the Picture/Source/srcset elemet use -->
+                        <img src="square-placeholder" alt="Flowers">
+                    </picture>
+                </div>
+            </div>
+            <div class="pane">
+                <button type="button" class="js-toggle active">Menu</button>
+                <div class="menu-content js-toggleContent js-hide">
+                    <button type="button" class="close">×</button>
+                    <ul class="main-nav-list list">
+                        <li class="main-nav-item">
+                            <a class="main-nav-link" href="index.html">Portfolio</a>
+                        </li>
+                        <li class="main-nav-item">
+                            <a class="main-nav-link" href="#">About</a>
+                        </li>
+                        <li class="main-nav-item">
+                            <a class="main-nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="main-nav-item">
+                            <a class="main-nav-link" href="portfolio/company%3Amedia%3Adesignapplication.html">Featured</a>
+                        </li>
+                        <li class="main-nav-item">
+                            <a class="main-nav-link" href="mailto:alicia_dyas@yahoo.com">alicia_dyas@yahoo.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pane">
+                <button type="button" class="js-toggle second-toggle">Social Media</button>
+                <div class="menu-content js-toggleContent js-hide">
+                    <button type="button" class="close">×</button>
+                    <ul class="main-nav-list list">
+                        <li class="main-nav-item">
+                            <a class="main-nav-link social-link" href="#">Facebook</a>
+                        </li>
+                        <li class="main-nav-item">
+                            <a class="main-nav-link social-link" href="#">Tumblr</a>
+                        </li>
+                        <li class="main-nav-item">
+                            <a class="main-nav-link social-link" href="#">Other</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+</div>
+<div class="columns small-12 medium-10 medium-offset-1 large-8 large-offset-1">
+	<section>
+        <main>
+            <header>
+                <h1>About Dyas Designs</h1>
+            </header>
+            <div class="row">
+                <div class="columns small-12 medium-6 large-6">
+                    <p></p>
+                </div>
+                <div class="columns small-12 medium-6 large-6">
+                    <picture>
+                        <source srcset="about-placeholder-small.jpg" media="(max-width: 400px)"></source>
+                        <source srcset="about-placeholder-medium.jpg" media="(max-width: 960px)"></source>
+                        <source srcset="about-placeholder-large.jpg"></source>
+                        <img src="about-placeholder" alt="Flowers">
+                    </picture>        	
+                </div>
+            </div>
+        </main>
+    </section>
+</div>
+
 
 
 

@@ -14,7 +14,6 @@
 --------------------------------3 Navigation Menues
 --------------------------------------3.1 Main
 --------------------------------------3.2 Sub
---------------------------------------3.3 Footer
 --------------------------------4 Structure
 --------------------------------------4.1 Site Content
 --------------------------------------4.2 Site Header
@@ -73,7 +72,9 @@
 /*
 --------------------------------------2.5 Lists
 */
-
+ul {
+	list-style: none;
+}
 
 
 /*
@@ -86,7 +87,51 @@
 --------------------------------3 Navigation Menues
 */
 
+a { color: #fff; text-decoration: none; transition: .15s; }
+a:hover { opacity: .7; }
+a:active { color: #000; }
+menu, nav {
+	display: block;
+}
 
+button { color: #fff; position: absolute; left: 0; width: 50%; padding: .75em 1em; margin: 0; -webkit-appearance: none; -moz-appearance: none; border: none; transition: .15s; }
+button.second-toggle { left: 50%; right: 0; }
+button:focus { outline: none; }
+button.close { width: 100%; text-align: right; }
+
+.menu-container { margin-left: -1rem; margin-right: -1rem; }
+.menu-container.open { display: block; height: 100%; background-color: #666; transition: .2s; }
+.main-nav-list { list-style: none; list-style-image: none; padding-left: 0; }
+.main-nav-item { margin: 1px 0; }
+.main-nav-link { display: block; padding: 1rem; background: #999; }
+
+
+.js .js-hide, .close, .js-toggle { display: none; }
+.js .close { display: block; position: static; }
+.js .menu-content { position: absolute; left: 0; right: 0; top: 2.7rem; }
+.js .js-toggle { background-color: #FBB117; margin: 0; display: block; }
+.js-toggle.active { background-color: #FDD017; }
+
+.anchor { color: #333; text-decoration: underline; display: inline-block; margin-bottom: 1em; }
+.anchor:hover { text-decoration: none; }
+
+@media screen and (min-width: 43em) {
+	button:hover { opacity: .7; }
+
+	.menu-container, .menu-container.open { height: auto; display: block!important; background-color: transparent; }
+	.menu-content { position: static!important; }
+
+	.pane { float: left; margin: .5rem 0; }
+	.pane:last-child { float: right; }
+	.main-nav-item { display: inline-block; margin: 0 .4rem; }
+	.main-nav-link { background: #FDD017; padding: .5rem .75rem; }
+	.social-link { background: #FBB117; }
+	
+	.anchor { display: none; }
+	
+	.js .js-hide { display: block; }
+	.js .close, .js .js-toggle { display: none; }
+}
 
 /*
 --------------------------------------3.1 Main
@@ -96,12 +141,6 @@
 
 /*
 --------------------------------------3.2 Sub
-*/
-
-
-
-/*
---------------------------------------3.3 Footer
 */
 
 

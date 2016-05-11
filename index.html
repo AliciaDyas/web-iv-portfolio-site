@@ -13,69 +13,138 @@
 </head>
 <body>
 
-<header>
-<!-- Small, Medium & Large Display Navigation -->
-    <nav class="menu-container group" id="menu">
-<!-- Identity Element only on Medium & Large display. "Rotates" from large to medium. -->
-    	<div class="pane">
-        	<div class="identity-element">
+<div class="columns small-1 medium-1 large-3">  
+    <header>
+    <!-- Small, Medium & Large Display Navigation -->
+        <nav class="menu-container group" id="menu">
+    <!-- Identity Element only on Medium & Large display. "Rotates" from large to medium. -->
+            <div class="pane">
+                <div class="identity-element">
+                	<picture>
+                    	<source srcset="square-placeholder-small.jpg" media="(max-width: 400px)"></source>
+                        <source srcset="square-placeholder-medium.jpg" media="(max-width: 960px)"></source>
+                        <source srcset="square-placeholder-large.jpg"></source>
+    <!-- This image is for browsers that DO NOT support the Picture/Source/srcset elemet use -->
+                        <img src="square-placeholder" alt="Flowers">
+                    </picture>
+                </div>
             </div>
-        </div>
-		<div class="pane">
-			<button type="button" class="js-toggle active">Menu</button>
-			<div class="menu-content js-toggleContent js-hide">
-				<button type="button" class="close">×</button>
-				<ul class="main-nav-list list">
-					<li class="main-nav-item">
-						<a class="main-nav-link" href="#">Portfolio</a>
-					</li>
-                    <li class="main-nav-item">
-						<a class="main-nav-link" href="#">About</a>
-					</li>
-                    <li class="main-nav-item">
-						<a class="main-nav-link" href="#">Contact</a>
-					</li>
-                    <li class="main-nav-item">
-						<a class="main-nav-link" href="#">Featured</a>
-					</li>
-                    <li class="main-nav-item">
-                    	<a class="main-nav-link" href="mailto:alicia_dyas@yahoo.com">alicia_dyas@yahoo.com</a>
-                    </li>
-				</ul>
-			</div>
-		</div>
-		<div class="pane">
-			<button type="button" class="js-toggle second-toggle">Social Media</button>
-			<div class="menu-content js-toggleContent js-hide">
-				<button type="button" class="close">×</button>
-				<ul class="main-nav-list list">
-					<li class="main-nav-item">
-						<a class="main-nav-link social-link" href="#">Facebook</a>
-					</li>
-                    <li class="main-nav-item">
-						<a class="main-nav-link social-link" href="#">Tumblr</a>
-					</li>
-                    <li class="main-nav-item">
-						<a class="main-nav-link social-link" href="#">Other</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-</header>
-
-<section>
-	<main>
-    	<!-- Two Columns for medium and large display but Coded for small first -->
-    	<div class="columns small-12 medium-5 medium-offset-1">
-        	<div class="">
+            <div class="pane">
+                <button type="button" class="js-toggle active">Menu</button>
+                <div class="menu-content js-toggleContent js-hide">
+                    <button type="button" class="close">×</button>
+                    <ul class="main-nav-list list">
+                        <li class="main-nav-item">
+                            <a class="main-nav-link" href="#">Portfolio</a>
+                        </li>
+                        <li class="main-nav-item">
+                            <a class="main-nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="main-nav-item">
+                            <a class="main-nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="main-nav-item">
+                            <a class="main-nav-link" href="portfolio/company%3Amedia%3Adesignapplication.html">Featured</a>
+                        </li>
+                        <li class="main-nav-item">
+                            <a class="main-nav-link" href="mailto:alicia_dyas@yahoo.com">alicia_dyas@yahoo.com</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <div class="columns small-12">
-        	
-        </div>
-    </main>
-</section>
+            <div class="pane">
+                <button type="button" class="js-toggle second-toggle">Social Media</button>
+                <div class="menu-content js-toggleContent js-hide">
+                    <button type="button" class="close">×</button>
+                    <ul class="main-nav-list list">
+                        <li class="main-nav-item">
+                            <a class="main-nav-link social-link" href="#">Facebook</a>
+                        </li>
+                        <li class="main-nav-item">
+                            <a class="main-nav-link social-link" href="#">Tumblr</a>
+                        </li>
+                        <li class="main-nav-item">
+                            <a class="main-nav-link social-link" href="#">Other</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+</div>
+<div class="columns small-1 medium-10 medium-offset-1 large-8 large-offset-1">
+    <section>
+        <main>
+        	<div class="row">
+                <!-- Two Columns for medium and large display but Coded for small first -->
+                <div class="columns small-12 medium-6 large-6">
+                    <div class="work">
+                    	<a href="portfolio/company%3Amedia%3Adesignapplication.html">
+                        	<picture>
+                            	<source srcset="square-placeholder-small.jpg" media="(max-width: 400px)"></source>
+                                <source srcset="square-placeholder-medium.jpg" media="(max-width: 960px)"></source>
+                                <source srcset="square-placeholder-large.jpg"></source>
+                                <img src="square-placeholder.jpg" alt="Flowers">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="work">
+                    	<a href="portfolio/company%3Amedia%3Adesignapplication.html">
+                        	<picture>
+                            	<source srcset="tall-placeholder-small.jpg" media="(max-width: 400px)"></source>
+                                <source srcset="tall-placeholder-medium.jpg" media="(max-width: 960px)"></source>
+                                <source srcset="tall-placeholder-large.jpg"></source>
+                                <img src="tall-placeholder.jpg" alt="Flowers">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="work">
+                    	<a href="portfolio/company%3Amedia%3Adesignapplication.html">
+                        	<picture>
+                            	<source srcset="square-placeholder-small.jpg" media="(max-width: 400px)"></source>
+                                <source srcset="square-placeholder-medium.jpg" media="(max-width: 960px)"></source>
+                                <source srcset="square-placeholder-large.jpg"></source>
+                                <img src="square-placeholder.jpg" alt="Flowers">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="columns small-12 medium-6 large-6">
+                    <div class="work">
+                    	<a href="portfolio/company%3Amedia%3Adesignapplication.html">
+                        	<picture>
+                            	<source srcset="tall-placeholder-small.jpg" media="(max-width: 400px)"></source>
+                                <source srcset="tall-placeholder-medium.jpg" media="(max-width: 960px)"></source>
+                                <source srcset="tall-placeholder-large.jpg"></source>
+                                <img src="tall-placeholder.jpg" alt="Flowers">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="work">
+                    	<a href="portfolio/company%3Amedia%3Adesignapplication.html">
+                        	<picture>
+                            	<source srcset="square-placeholder-small.jpg" media="(max-width: 400px)"></source>
+                                <source srcset="square-placeholder-medium.jpg" media="(max-width: 960px)"></source>
+                                <source srcset="square-placeholder-large.jpg"></source>
+                                <img src="square-placeholder.jpg" alt="Flowers">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="work">
+                    	<a href="portfolio/company%3Amedia%3Adesignapplication.html">
+                        	<picture>
+                            	<source srcset="square-placeholder-small.jpg" media="(max-width: 400px)"></source>
+                                <source srcset="square-placeholder-medium.jpg" media="(max-width: 960px)"></source>
+                                <source srcset="square-placeholder-large.jpg"></source>
+                                <img src="square-placeholder.jpg" alt="Flowers">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+</div>
 
 
 
