@@ -5,6 +5,7 @@
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact Dyas Designs</title>
+<script>document.documentElement.className="js"</script>
 <link rel="stylesheet" type="text/css" href="css/normalize.css">
 <link rel="stylesheet" type="text/css" href="css/reset.css">
 <link rel="stylesheet" type="text/css" href="css/foundation.css">
@@ -14,67 +15,66 @@
 
 <div class="columns small-12 medium-12 large-3">  
     <header>
-    <!-- Small, Medium & Large Display Navigation -->
-        <nav class="menu-container group" id="menu">
-    <!-- Identity Element only on Medium & Large display. "Rotates" from large to medium. -->
-            <!-- <div class="pane">
+    	<div class="row">
+    <!-- Identity Element. "Rotates" from large to medium. Only on large and medium. -->
+            <div class="columns medium-3 large-1">
                 <div class="identity-element">
-                	<picture>
-                    	<source srcset="square-placeholder-small.jpg" media="(max-width: 400px)"></source>
-                        <source srcset="square-placeholder-medium.jpg" media="(max-width: 960px)"></source>
-                        <source srcset="square-placeholder-large.jpg"></source>
-    This image is for browsers that DO NOT support the Picture/Source/srcset elemet use 
-                        <img src="square-placeholder" alt="Flowers">
-                    </picture>
+                    <img data-interchange="[identity-placeholder-small.jpg, (small), identity-placeholder-medium.jpg, (medium), identity-placeholder-large.jpg, (large)]" alt="identity element">
                 </div>
             </div>
-            -->
-            <div class="pane">
-                <button type="button" class="js-toggle active">Menu</button>
-                <div class="menu-content js-toggleContent js-hide">
-                    <button type="button" class="close">×</button>
-                    <ul class="main-nav-list list">
-                        <li class="main-nav-item">
-                            <a class="main-nav-link" href="index.html">Portfolio</a>
-                        </li>
-                        <li class="main-nav-item">
-                            <a class="main-nav-link" href="about.html">About</a>
-                        </li>
-                        <li class="main-nav-item">
-                            <a class="main-nav-link" href="#">Contact</a>
-                        </li>
-                        <li class="main-nav-item">
-                            <a class="main-nav-link" href="portfolio/company%3Amedia%3Adesignapplication.html">Featured</a>
-                        </li>
-                        <li class="main-nav-item">
-                            <a class="main-nav-link" href="mailto:alicia_dyas@yahoo.com">alicia_dyas@yahoo.com</a>
-                        </li>
-                    </ul>
-                </div>
+    <!-- Large Display Navigation -->
+    		<div class="columns large-2 show-for-large-only">
+            	<nav>
+                	
+                </nav>
             </div>
-            <div class="pane">
-                <button type="button" class="js-toggle second-toggle">Social Media</button>
-                <div class="menu-content js-toggleContent js-hide">
-                    <button type="button" class="close">×</button>
-                    <ul class="main-nav-list list">
-                        <li class="main-nav-item">
-                            <a class="main-nav-link social-link" href="#">Facebook</a>
-                        </li>
-                        <li class="main-nav-item">
-                            <a class="main-nav-link social-link" href="#">Tumblr</a>
-                        </li>
-                        <li class="main-nav-item">
-                            <a class="main-nav-link social-link" href="#">Other</a>
-                        </li>
-                    </ul>
-                </div>
+    <!-- Small & Medium Display Navigation -->
+            <div class="columns medium-9 hide-for-large">
+                <nav class="menu-container group" id="menu">
+                    <div class="pane">
+                        <button type="button" class="js-toggle active">Menu</button>
+                        <div class="menu-content js-toggleContent js-hide">
+                            <button type="button" class="close">&times;</button>
+                            <ul class="main-nav-list list">
+                                <li class="main-nav-item">
+                                    <a class="main-nav-link" href="index.html">Portfolio</a>
+                                </li>
+                                <li class="main-nav-item">
+                                    <a class="main-nav-link" href="about.html">About</a>
+                                </li>
+                                <li class="main-nav-item">
+                                    <a class="main-nav-link" href="#">Contact</a>
+                                </li>
+                                <li class="main-nav-item">
+                                    <a class="main-nav-link" href="portfolio/company%3Amedia%3Adesignapplication.html">Featured</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pane">
+                        <button type="button" class="js-toggle second-toggle">Social Media</button>
+                        <div class="menu-content js-toggleContent js-hide">
+                        	<button type="button" class="close">&times;</button>
+                            <ul class="main-nav-list list">
+                                <li class="main-nav-item">
+                                    <a class="main-nav-link social-link" href="#">Facebook</a>
+                                </li>
+                                <li class="main-nav-item">
+                                    <a class="main-nav-link social-link" href="#">Tumblr</a>
+                                </li>
+                                <li class="main-nav-item">
+                                    <a class="main-nav-link social-link" href="mailto:alicia_dyas@yahoo.com">alicia_dyas@yahoo.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
             </div>
-        </nav>
+        </div>
     </header>
 </div>
 <div class="columns small-12 medium-10 medium-offset-1 large-8 large-offset-1">
 	<section>
-        <main>
             <header>
                 <h1>Contact Me</h1>
                 <p></p>
@@ -84,30 +84,26 @@
                 	<form>
                     	<input type="text" name="name" value="Full Name">
                         <input type="email" name="email" value="example@email.com">
-                        <textarea name="message"></textarea>
+                        <textarea name="message" rows="10">What can I help you with today? Will you explain your design problem for me?</textarea>
                         <input type="submit">
                     </form>
                 </div>
                 <div class="columns small-12 medium-3 large-4">
                 	<div class="contact">
                     	<ul>
-                        	<li>
-                            	<a href=""></a>
+                            <li>
+                            	<a href="www.tumblr.com"></a>
                             </li>
                             <li>
-                            	<a href=""></a>
+                            	<a href="www.facebook.com"></a>
                             </li>
                             <li>
-                            	<a href=""></a>
-                            </li>
-                            <li>
-                            	<a href=""></a>
+                            	<a href="mailto:alicia_dyas@yahoo.com"></a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
-        </main>
     </section>
 </div>
 
