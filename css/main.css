@@ -20,7 +20,7 @@
 --------------------------------------4.3 Site Footer
 --------------------------------5 Media
 --------------------------------------5.1 Sprites
---------------------------------------5.2 Background Images
+--------------------------------------5.2 Images
 --------------------------------6 Other
 --------------------------------------6.1 Colors
 --------------------------------------6.2 Media Queries
@@ -35,19 +35,20 @@
 --------------------------------1 Body
 */
 
-.wrapper {
-	margin: 0 auto;
-}
-
 body {
 	margin: 0 7rem;
 }
 
+wrapper, footer {
+	margin: 0 auto;
+}
 /*
 --------------------------------2 Typography
 */
 
-
+p {
+	font-size: 16px;
+}
 
 /*
 --------------------------------------2.1 Headings
@@ -93,6 +94,19 @@ ul {
 --------------------------------3 Navigation Menues
 */
 
+.fixed {
+	position: fixed;
+	margin-top: rem;
+}
+
+/*
+--------------------------------------3.1 Main
+*/
+
+#large-display-nav ul li:first-child {
+	padding-top: 1rem;
+}
+
 a { 
 	color: #fff; 
 	text-decoration: none; 
@@ -105,12 +119,12 @@ a:active {
 
 button { 
 	color: #fff; 
-	font-size: 1em; 
+	font-size: 1rem; 
 	font-weight: bold; 
 	position: absolute; 
 	left: 0; 
 	width: 50%; 
-	padding: .75em 1em; 
+	padding: 1rem; 
 	margin: 0; 
 	margin-left: -10%;
 	margin-right: -10%;
@@ -137,10 +151,11 @@ button.close {
 	margin-left: -6%; 
 	margin-right: -6%; 
 }
+
 .menu-container.open { 
 	display: block; 
 	height: 100%!important;
-	background-color: #666; 
+	background-color: #9957a3; 
 	transition: .2s; 
 }
 
@@ -149,16 +164,25 @@ button.close {
 	list-style-image: none; 
 	padding-left: 0;
 	margin: 0;
-	}
+}
 	
 .main-nav-item { 
 	margin: 0; 
+	text-align: center;
+	font-size: .8rem;
 }
 
 .main-nav-link {
 	display: block; 
-	padding: 1em; 
-	background: #999; 
+	padding: 1rem; 
+	background: #bc97c6; 
+	text-transform: uppercase;
+}
+
+.main-nav-link:active, .main-nav-link:hover {
+	color: #9957a3;
+	background: #fff;
+	border: #9957a3 solid 2px;
 }
 
 .pane { 
@@ -181,16 +205,36 @@ button.close {
 }
 
 .js .js-toggle { 
-	background-color: #666; 
+	background-color: #9957a3; 
 	margin: 0; 
 	display: block; 
+	border: #9957a3 solid 2px;
 }
 
 .js-toggle.active { 
-	background-color: #555; 
+	background-color: #fff; 
+	color: #9957a3;
 }
 
-@media screen and (min-width: 850px) {
+.nav-button-large a {
+	color: #fff;
+	background-color: #9957a3;
+	padding: .2rem;
+	margin: .3rem;
+	display: block;
+	text-align: center;
+	border: #9957a3 solid 2px;
+	text-transform: uppercase;
+	font-size: .6rem;
+}
+
+.nav-button-large a:hover {
+	color: #9957a3;
+	background-color: #fff;
+	font-size: .8rem;
+}
+
+@media screen and (min-width: 640px) {
 	
 
 	.menu-container, .menu-container.open { 
@@ -203,21 +247,17 @@ button.close {
 	}
 
 	.pane { 
-		float: right;
+		float: left;
 	}
-	
-	.pane:last-child { 
-		float: left; 
-	}
-	
+		
 	.main-nav-item { 
 		display: inline-block; 
-		margin: 0 .4em; 
+		margin: 0 .1em; 
 	}
 	
 	.main-nav-link { 
-		background: #666; 
-		padding: .5em .75em; 
+		background: #9957a3; 
+		padding: .2em .3em; 
 	}
 	
 	.social-link { 
@@ -231,25 +271,10 @@ button.close {
 	.js .close, .js .js-toggle { 
 		display: none; 
 	}
-	
+
 }
 
 
-
-/*
---------------------------------------3.1 Main
-*/
-.nav-button-large a {
-	color: #fff;
-	background-color: #666;
-	padding: 1rem;
-	display: block;
-}
-
-.nav-button-large a:hover {
-	color: #666;
-	background-color: #fff;
-}
 
 /*
 --------------------------------------3.2 Sub
@@ -264,9 +289,6 @@ button.close {
 --------------------------------4 Structure
 */
 
-#portfolio {
-		margin-top: 20rem;
-}
 
 /*
 --------------------------------------4.1 Site Content
@@ -284,7 +306,9 @@ button.close {
 --------------------------------------4.3 Site Footer
 */
 
-
+footer {
+	margin-top: 15rem;
+}
 
 /*
 --------------------------------5 Media
@@ -298,7 +322,7 @@ button.close {
 
 
 /*
---------------------------------------5.2 Background Images
+--------------------------------------5.2 Images
 */
 
 .work img, .featured-image img, .featured-image p {
@@ -321,6 +345,15 @@ img {
 	background-color: transparent;
 }
 
+li>img {
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+	padding-bottom: .5rem;
+	padding-top: .5rem;
+}
+
+
 /*
 --------------------------------6 Other
 */
@@ -334,14 +367,23 @@ img {
 /*
 --------------------------------------6.2 Media Queries
 */
-@media screen and (max-width:1024px) {
-	.identity-element img {
-		margin-left: -25%;
-		margin-top: -2%;
+
+@media screen and (min-width:1024px) {
+	#large-display-nav {
+		background: top right url(../img/octopus-grayscale-large.jpg);
+		height: 1000px;
+	}
+	
+	.rule-top {
+		border-top: #9957a3 solid 1px;
+		margin-top: 1rem;
+		height: 1px;
+		width: 100%;
+		display: block;
 	}
 }
 
-@media screen and (max-width:960px) {
+@media screen and (max-width:1024px) {
 	.main-nav-item a {
 		font-size: .6rem;
 		margin: 0;

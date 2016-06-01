@@ -16,7 +16,7 @@ function anchorLink(){
 }
 function tabsControl() {
 	var menuContainer = $('#menu');
-	var container = $('.js-toggleContent');
+	var container = $('.js-toggle-content');
 	var trigger = $('.js-toggle');
 	// var closeIt = $('<button class="close" type="button">&times;</button>');
 
