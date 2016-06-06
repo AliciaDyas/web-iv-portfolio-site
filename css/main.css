@@ -274,6 +274,10 @@ button.close {
 --------------------------------4 Structure
 */
 
+.margin {
+	margin-top: 8rem;
+	margin-bottom: 5rem;
+}
 
 /*
 --------------------------------------4.1 Site Content
